@@ -1,30 +1,29 @@
-// components/Navbar.js
-import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo2.png';
+import React, { useState, useEffect } from "react";
+import logo from "../assets/logo2.png";
 
 export default function Navbar() {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
       if (scrollPosition < 100) {
-        setActiveSection('hero');
+        setActiveSection("hero");
       } else if (scrollPosition >= 100 && scrollPosition < 1000) {
-        setActiveSection('services');
+        setActiveSection("services");
       } else if (scrollPosition >= 1000 && scrollPosition < 2000) {
-        setActiveSection('features');
+        setActiveSection("features");
       } else if (scrollPosition >= 2000 && scrollPosition < 3000) {
-        setActiveSection('contact');
+        setActiveSection("contact");
       } else {
-        setActiveSection('about');
+        setActiveSection("about");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -33,7 +32,7 @@ export default function Navbar() {
     if (section) {
       window.scrollTo({
         top: section.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -41,7 +40,10 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full bg-[#f2b705] border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a
+          href="https://flowbite.com/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <img src={logo} className="h-8" alt="Flowbite Logo" />
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -85,7 +87,7 @@ export default function Navbar() {
               <a
                 href="#hero"
                 className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent "
-                onClick={() => scrollToSection('hero')}
+                onClick={() => scrollToSection("hero")}
               >
                 Home
               </a>
@@ -94,7 +96,7 @@ export default function Navbar() {
               <a
                 href="#services"
                 className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent "
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection("services")}
               >
                 Services
               </a>
@@ -103,7 +105,7 @@ export default function Navbar() {
               <a
                 href="#features"
                 className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent "
-                onClick={() => scrollToSection('features')}
+                onClick={() => scrollToSection("features")}
               >
                 Features
               </a>
@@ -112,7 +114,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent "
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
               >
                 Contact
               </a>
@@ -121,7 +123,7 @@ export default function Navbar() {
               <a
                 href="#about"
                 className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent "
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection("about")}
               >
                 About
               </a>

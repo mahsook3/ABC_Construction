@@ -24,10 +24,13 @@ export default function Features() {
         "https://images.unsplash.com/photo-1525328437458-0c4d4db7cab4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
-  
+
   return (
     <>
-      <div id="features" className="flex-1 flex flex-col justify-center items-center">
+      <div
+        id="features"
+        className="flex-1 flex flex-col justify-center items-center"
+      >
         <h1 className="text-2xl font-bold">Our Features</h1>
         <p>Comprehensive Solutions Tailored to Your Needs</p>
       </div>
