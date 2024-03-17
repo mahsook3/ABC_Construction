@@ -2,7 +2,7 @@ import React from "react";
 import bg from "../assets/bg2.png";
 const Contact = () => {
   return (
-    <div
+    <div id="contact"
       className="relative bg-opacity-50 z-10"
       style={{ backgroundImage: `url(${bg})` }}
     >

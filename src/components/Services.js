@@ -2,7 +2,7 @@ import React from "react";
 import bg from "../assets/bg1.png";
 export default function Services() {
   return (
-    <div style={{ backgroundImage: `url(${bg})` }}>
+    <div id="services" style={{ backgroundImage: `url(${bg})` }}>
     <div className="flex ml-20 pt-20">
       <div className="flex-1 flex flex-col justify-center h-screen">
         <h1 className="text-2xl font-bold">Our Services</h1>

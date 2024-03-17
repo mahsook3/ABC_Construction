@@ -1,3 +1,5 @@
+// App.js
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -11,14 +13,14 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Banner />
-    <Services />
-    <Features />
-    <Contact />
-    <About />
-    <Footer />
+      <Navbar />
+      <Hero id="hero" />
+      <Banner />
+      <Services id="services" />
+      <Features id="features" />
+      <Contact id="contact" />
+      <About id="about" />
+      <Footer />
     </>
   );
 }

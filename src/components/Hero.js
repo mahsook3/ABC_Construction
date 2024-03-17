@@ -77,7 +77,7 @@ export default function Hero() {
     };
 
     return (
-        <div className='relative mt-20 h-screen'>
+        <div className='relative mt-20 h-screen' id='hero'>
             <div className='absolute inset-0 blur-xl h-[580px]'></div>
             <div className='relative'>
                 <section>

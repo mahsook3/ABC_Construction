@@ -27,7 +27,7 @@ export default function Features() {
   
   return (
     <>
-      <div className="flex-1 flex flex-col justify-center items-center">
+      <div id="features" className="flex-1 flex flex-col justify-center items-center">
         <h1 className="text-2xl font-bold">Our Features</h1>
         <p>Comprehensive Solutions Tailored to Your Needs</p>
       </div>

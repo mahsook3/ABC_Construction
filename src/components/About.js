@@ -3,7 +3,7 @@ import logo from '../assets/logo1.png'
 
 export default function About() {
   return (
-    <div className="container md:flex md:flex-row flex-col bg-[#f2f2f2] ">
+    <div id='about' className="container md:flex md:flex-row flex-col bg-[#f2f2f2] ">
     <div className="item md:w-1/2 w-full max-w-screen-xl mx-auto px-4 pt-28 pb-5 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
         <img src={logo} alt="logo" className="w-1/2 h-1/2 flex flex-center" />
     </div>
